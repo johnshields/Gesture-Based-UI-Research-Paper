@@ -17,14 +17,15 @@ alt="GMIT Logo" width="500" height="200"/>
 | **Module**              | Gesture Based UI Development |
 | **Institute**           | [Galway-Mayo Institute of Technology](https://www.gmit.ie/) |
 | **Student**             | [John Shields](https://github.com/johnshields) |
-| **Module LectureR**      | Damien Costello |
+| **Module Lecturer**      | Damien Costello |
 
 ***
-
-
+# Requirements
 Research Paper based on Gesture Based User Interface Experience – Accessibility, Evolution and Challenges. 
 The purpose of this exercise is to research the User Interface as it moves from purely physical (mouse, keyboard, touch screen) to include intuitive
 interaction through gestures.
+
+# Paper Headings
 
 * User Experience Evolution
 
