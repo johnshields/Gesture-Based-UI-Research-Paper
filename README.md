@@ -20,8 +20,8 @@ alt="GMIT Logo" width="500" height="200"/>
 | **Module Lecturer**      | Damien Costello |
 
 ***
-# Requirements
-Research Paper based on Gesture Based User Interface Experience – Accessibility, Evolution and Challenges. 
+# Project Description
+Research Paper based on Gesture Based User Interface Experience – Accessibility, Evolution and Challenges.
 The purpose of this exercise is to research the User Interface as it moves from purely physical (mouse, keyboard, touch screen) to include intuitive
 interaction through gestures.
 
@@ -29,12 +29,11 @@ interaction through gestures.
 
 * User Experience Evolution
 
-* Gestures as a communication tool 
+* Gestures as a communication tool
 
-* Challenges for design of applications 
+* Challenges for design of applications
 
 * Challenges for implementation
 
 ***
 ###### END OF README
-
