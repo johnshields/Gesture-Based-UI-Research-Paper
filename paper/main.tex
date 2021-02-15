@@ -9,7 +9,7 @@
 \usepackage{notoccite} %citation number ordering
 \usepackage{lscape} %landscape table
 \usepackage{caption} %add a newline in the table caption
-\usepackage[maxfloats=40]{morefloats}
+\usepackage{float}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
 \definecolor{ultramarine}{HTML}{2f3973}
@@ -49,22 +49,22 @@ anchorcolor = hexablack]{hyperref}
 
 %%% START OF CONTENT %%%%
 \section{Description}
-This Research Paper is based on Gesture Based User Interface Experience that focuses on Accessibility, Evolution, and Challenges. The purpose of this paper is to research the User Interface as it moves from purely physical (mouse, keyboard, touch screen) to include intuitive interaction through gestures.
+This Research Paper focuses on Gesture Based User Interface Experience that concentrates on Accessibility, Evolution, and Challenges. The purpose of this paper is to research the User Interface as it moves from purely physical (mouse, keyboard, touch screen) to include intuitive interaction through gestures.
 
 \section{Introduction}
-Gesture Based User Interface Experience can vary in many ways. Computers are all around us. It can be said that almost every household has at least one computer, where it be a PC or a Laptop, there is sure to be one in most homes today. Obviously, computers are not the only devices in homes. Nowadays, Phones are extremely popular and heavily used. They might even be used more than computers. Having said that, a phone is basically a computer that can fit in a pocket. Gesture Based UI is heavily used in these devices. This can be as simple as moving the hand to the left and right to go back and forth between pages for a computer. Gestured Based UI only came into play with phones when the touch screen was introduced. Computer too can have touch screens, but it is optional. Most personal phones likely have touch screens. Today’s phones rely on the touch screen. They only have a few physical buttons. These are mainly for locking/unlocking phones and for adjusting the volume level. Gesture Based UI is not just for computers and phones. It is also for something as simple as a watch or a car radio, making them smarter. Gestured Based UI makes every device smarter.
+Gesture Based User Interface Experience can vary in many ways. Computers are all around us. Almost every household has at least one computer, where it be a PC or a Laptop, there is sure to be one in most homes today. Computers are not the only devices in homes. Nowadays, Phones are extremely popular and heavily used. They might even be used more than computers. A phone is basically a computer that can fit in a pocket. Gesture Based UI is heavily used in these devices. These controls can be as simple as moving the hand to the left and right to go back and forth between pages for a computer. Gestured Based UI only came into play with phones when the touch screen was introduced to them. Computers too can have touch screens, but it is optional. Most personal phones likely have touch screens. Today’s phones rely on the touch screen. They only have a few physical buttons. These are mainly for locking/unlocking phones and for adjusting the volume level. Gesture Based UI is not just for computers and phones. It is also for something as simple as a watch or a car radio, making them smarter. Gestured Based UI makes every device smarter.
 
 \section{User Experience Evolution}
 % Originally with just a keyboard and screen, computers have evolved to include
-% a mouse, touch screen, voice control, virtual, augmented spaces and gesture
-% recognition. What is the User Experience and what are the drivers in the
-% evolution process? Why are user’s never happy with the current iteration of
+% a mouse, touch screen, voice control, virtual, augmented spaces, and gesture
+% recognition. What is the User Experience, and what are the drivers in the
+% evolution process? Why is the user never happy with the current iteration of
 % interaction with computing systems? What are the challenges faced by each
 % generation as new interactions are marketed to users from both acceptance and
 % implementation perspectives?
 
 \subsection{Early Days of User Experience}
-User Experience is constantly Evolving. The first general-purpose computer was the monolithic ENIAC machine. The machine’s construction began on the 13th of May, 1943, and was finished on the 2nd of October, 1955. The User Experience on the ENIAC was a bit of a headache and relied on many experts to work the machine. ENIAC was designed to be capable of being reprogrammed to solve a large number of numerical problems. The machine’s programming consisted of setting switches and connecting wires according to specific instructions, which were first worked out on paper, which took weeks. This machine also used a punch-card reader as an input and output device. This is obviously not very user-friendly, but for the time, it was extraordinary. Comparing this machine to any computer or smart device today shows how much these technologies have evolved.
+User Experience is constantly Evolving. The first general-purpose computer was the monolithic ENIAC machine. The machine’s construction took just under ten years and was finished on the 2nd of October, 1955. The User Experience on the ENIAC was a headache and relied on many experts to work the machine. ENIAC was capable of being reprogrammed to solve a large number of numerical problems. The machine’s programming consisted of setting switches and connecting wires according to specific instructions, which were first worked out on paper, which took weeks. This experience was not very user-friendly, but for the time, it was extraordinary. Comparing this machine to any computer or smart device today shows how much these technologies have evolved.
 \cite{ref1}
 
 \begin{figure}[h!]
@@ -75,7 +75,7 @@ User Experience is constantly Evolving. The first general-purpose computer was t
 \end{figure}
 \newpage
 \subsection{The Computer Keyboard}
-One of the key parts of a computer that is still highly used today is the keyboard. Typewriters inspire keyboards. The typewriter has been around since the late 1800s and is an antique that is still used today. The QWERTY keyboard layout, which came from the Sholes and Glidden typewriter, also came from this time. QWERTY’s design has the keys to be spread out to avoid jamming those old typewriters. The QWERTY layout has stood the test of time in the English speaking world. The Binac computer (1948) used an electromechanically controlled typewriter to input data directly onto magnetic tape and print results. This was the first integration of a keyboard like system for a computer and began the computer keyboard’s origins. Since this origins, the keyboard is used in most electronic devices that require typing. 
+One of the key parts of a computer that is still highly used today is the keyboard. Typewriters inspired keyboards. The typewriter has been around since the late 1800s and is an antique that is still used today. The QWERTY keyboard layout, which came from the Sholes and Glidden typewriter, also came from this time. QWERTY’s design has the keys to be spread out to avoid jamming those old typewriters. The QWERTY layout has stood the test of time in the English speaking world. The Binac computer (1948) used an electromechanically controlled typewriter to input data directly onto magnetic tape and print results. Binac’s typewriter was the first integration of a keyboard like system for a computer and began the computer keyboard’s origins. Since this origins, the keyboard is used in most electronic devices that require typing. 
 \cite{ref3}
 
 \begin{figure}[h!]
@@ -96,9 +96,7 @@ What is a UI without a screen? A screen is so essential now and is probably the 
     \includegraphics[width=0.5\textwidth]{pics/z3.jpg}
 \end{figure}
 
-Since the Z3, computers such as the SWAC Console and the Ferranti Mark 1 Star (1951) used CRT Display (Cathode-ray tube) to show CRT-based memory contents. In the 1960s, CRT was used as virtual paper in a virtual teletype on computers such as the Uniscope 300 (1964) and the ADM-3 (1975). These display terminals became very prominent for the UI in computers right into the mid-1970s. At the time, these computers were quite expensive, so they were not hugely accessible. In the mid-1970s, CCTV was used to create cheaper computers such as the Apple I (1976) and the SOL-20 (1976). These were the first computers that have factory video outputs. As a result, these computers became more accessible than their predecessors. With the Television (TV) becoming more and more popular, computers started to use the TV’s technology. Companies like Apple, Commodore, and Radio shack used this technology to their advantage to create a better User Experience.
-
-In the 1980s, computer screens became revolutionary with the use of CGA (Colour Graphics Adapter) and EGA (Enhanced Graphics Adapter) that were both introduced by IBM. These brought color and higher resolution to computer screens. Followed by these displays, the Macintosh Monitors came, and they used bitmapped graphics. The Mac II’s (1978) video standard was quite similar to the VGA (Video Graphics Array). Mac monitors continued to evolve and were always known for their sharpness and accurate color representation.
+In the 1980s, computer screens became revolutionary with CGA (Colour Graphics Adapter) and EGA (Enhanced Graphics Adapter) introduced by IBM. These brought color and higher resolution to computer screens. Followed by these displays, the Macintosh Monitors came, and they used bitmapped graphics. The Mac II’s (1978) video standard was quite similar to the VGA (Video Graphics Array). 
 
 Also, in the 1980s, LDC (Liquid Crystal Display) screens that originated from the 1960s became widely used on calculators and watches with monochrome displays—from the 1980s and on through the 1990s, LCD drastically improved. At this time, LCD created a market boom for laptops. LDC is continued to be supported and used today in electronic devices such as PCs, laptops, TVs, smartphones, smartwatches, cameras, Etc.
 \cite{ref5}
@@ -107,23 +105,24 @@ Also, in the 1980s, LDC (Liquid Crystal Display) screens that originated from th
     \caption{Modern Screens}
     \label{image:MODERNSCREENS}
     \centering
-    \includegraphics[width=0.45\textwidth]{pics/modern_screens.png}
+    \includegraphics[width=0.3\textwidth]{pics/modern_screens.png}
 \end{figure}
 
 \subsection{The Computer Mouse}
-The Mouse is another essential part of a computer. Before the use of the mouse, data was entered by typing commands with the keyboard, as discussed earlier. The standard mice that are used today are made out of plastic. The first computer mouse was created as a wooden box with two metal wheels that contact the surface and only one key. Douglas Engelbart invented this mouse in 1964. This mouse was pretty limited in what it could do. It was only eight years later that Bill English created the Ball Mouse. The ball replaced the two metal wheels that Engelbart’s mouse, which made it possible for this mouse to move in every direction. The Alto (1973) had a special input interface made by SRI. Alto’s mouse had three buttons and enabled the first bitmapped and overlapping windows display. As a result, Alto’s became very popular with its users. D. Venolia of Apple developed the first scroll-wheel in the late 1980s. It was not until the 1990s that mice started to resemble present-day mice. In 1999 Microsoft created a mouse known as the Intellimouse with an Optic LED design. This mouse paved the way for a new generation of optical mice.
+The Mouse is another essential part of a computer. Before the use of the mouse, data was entered by typing commands with the keyboard, as discussed earlier. The standard mice that are used today are made out of plastic. The first computer mouse was a wooden box with two metal wheels that contact the surface and only one key. Douglas Engelbart invented this mouse in 1964. This mouse was pretty limited in what it could do. It was only eight years later that Bill English created the Ball Mouse. The ball replaced the two metal wheels that Engelbart’s mouse, which made it possible for this mouse to move in every direction. The Alto (1973) had a special input interface made by SRI. Alto’s mouse had three buttons and enabled the first bitmapped and overlapping windows display. As a result, Alto’s became very popular with its users. D. Venolia of Apple developed the first scroll-wheel in the late 1980s. It was not until the 1990s that mice started to resemble present-day mice. In 1999 Microsoft created a mouse known as the Intellimouse with an Optic LED design. This mouse paved the way for a new generation of optical mice.
 \cite{ref6} \cite{ref7}
 
 \begin{figure}[!ht]
     \caption{Computer Mice Throughout the Years}
     \label{image:mice}
     \centering
-    \includegraphics[width=0.5\textwidth]{pics/mice.png}
+    \includegraphics[width=0.45\textwidth]{pics/mice.png}
 \end{figure}
 
 \newpage
 \subsection{The Touch Screen}
-Touch Screen technology has become vastly popular throughout the years. Touchscreens are everywhere. They can be on PCs, laptops, smartphones, smartwatches, cameras, and almost every other electronic device with a screen. The touchscreen originated in the 1960s. E.A. Johnson invented the first finger-driven touchscreen in 1965. This touchscreen mechanism is used in many smartphones today—what now is know as capacitive touch. An insulator, like glass, coated with a transparent conductor (such as Indium Tin Oxide) is used by the capacitive touchscreen panel. Usually, the ‘conductive’ part is a human finger or a touch pen. Johnson’s initial touchscreen could only process one touch at a time, and what is describe today as ‘multi-touch’ was still years away. By 1971, a number of different machines with touchscreens were introduced. One of these machines was the Plato IV, which was the first touchscreen computer to be used in a classroom. This allowed students to touch the screen to select answers to questions. The PLATO IV employed infrared technology rather than capacitive or resistive. 
+Throughout the years, touch screen technology has been vastly popular. There are touchscreens everywhere. They can be seen on PCs, laptops, smartphones, smartwatches, cameras, and almost every other electronic device. In the 1960s, the touchscreen emerged. In 1965, E.A.  Johnson invented the first touchscreen powered by fingertips. In many smartphones today, this touchscreen feature is used and is now known as the capacitive touch. The capacitive touchscreen display utilizes an insulator covered with a clear conductor, such as glass (Indium Tin Oxide).
+Usually, a human finger or a touch pen is the ‘conductive’ component. By 1971, numerous various touchscreen computers were introduced. Plato IV, the first touchscreen device used in a classroom, was one of these computers. This computer allowed students to touch the screen to select answers to questions. Infrared technology was used in the PLATO IV rather than capacitive or resistive.
 \cite{ref8}
 
 \begin{figure}[!ht]
@@ -133,98 +132,94 @@ Touch Screen technology has become vastly popular throughout the years. Touchscr
     \includegraphics[width=0.5\textwidth]{pics/plato_iv.jpg}
 \end{figure}
 
-At the beginning of the 1980s, touchscreens began heavily commercialized. HP created a computer called the HP-150 in 1983. The HP-150 used MS-DOS and featured a 9inch Sony CRT surrounded by infrared (IR) emitters and detectors that sensed where the user’s finger came down the screen. The HP-150 was not immediately embraced because it had usability issues. For example, poking at the screen would, in turn, block other IR rays that could tell the computer where the user’s finger was pointing. 
+Touchscreens started to become highly commercialized at the beginning of the 1980s. HP developed a machine named the HP-150 in 1983. The HP-150 used MS-DOS and featured an infrared (IR) emitter surrounded by a 9-inch Sony CRT, and detectors sensed where the user’s finger came down from the screen. The HP-150 was not embraced immediately because it had problems with usability. For example, poking at the screen would block other IR rays that might tell the machine where the user's finger was pointing.
 
-IBM and BellSouth teamed up in 1993 to launch the Simon Personal Communicator (SPC). The SPC was one of the first cellphones that possessed a touchscreen. The phone featured paging capabilities, an e-mail and calendar application, an appointment schedule, an address book, a calculator, and a pen-based sketchpad. The touchscreen was resistive, which required a stylus to navigate through menus and to input data.
+IBM and BellSouth partnered up in 1993 to launch the Simon Personal Communicator (SPC). One of the first cellphones that had a touchscreen was the SPC. The phone included paging capabilities, an application for e-mail and calendar, an appointment schedule, an address book, a calculator, and a sketchpad based on a pen. The touchscreen was resistive, requiring a stylus to navigate and input data from menus.
 \cite{ref8}
 
 \begin{figure}[!ht]
     \caption{IBM's Simon Personal Communicator}
     \label{image:SPC}
     \centering
-    \includegraphics[width=0.4\textwidth]{pics/IBM_Simon.jpeg}
+    \includegraphics[width=0.5\textwidth]{pics/IBM_Simon.jpeg}
 \end{figure}
 
-In the 2000s, touchscreen technology flourished. There were advancements during this time that helped bring multi-touch and gesture-based technology to the masses. The 2000s were also the time when touchscreens became the favorite tool for design collaboration. The first human-controlled multi-touch device was invented by Nimish Mehta at the University of Toronto in 1982. It was designed with a frosted glass panel in front of a camera, which detected action when it identified ‘black spots’ showing up onscreen.
-As the 2000s approached, companies poured more resources into integrating touchscreen technology into their daily processes. With the arrival of the PortfolioWall 3D animators and designers were primarily targeted. PortfolioWall was a large-format touchscreen meant to be a dynamic version of the boards that design studios use to track projects.  The PortfolioWall had a gesture-based interface that was simple and easy-to-use. It allowed users to inspect and maneuver images, animations, and 3D files. 
+Touchscreen technologies exploded in the 2000s. At this time, some developments helped introduce multi-touch and gesture based technologies to the people. The 2000s were also the period that touchscreens became the preferred collaboration platform for design. The arrival of PortfolioWall mainly targeted 3D animators and designers. PortfolioWall was a large-format touchscreen designed to be a dynamic variant of the boards used to monitor projects by design studios. The PortfolioWall was quick and easy-to-use with a gesture based interface. Users were able to examine and manage pictures, videos, and 3D files.
 \cite{ref8}
 
 \begin{figure}[!ht]
     \caption{PortfolioWall}
     \label{image:PFW}
     \centering
-    \includegraphics[width=0.5\textwidth]{pics/pf_wall.jpg}
+    \includegraphics[width=0.4\textwidth]{pics/pf_wall.jpg}
 \end{figure}
-
-Sony unveiled a flat input surface named SmartSkin in 2002 that could simultaneously identify multiple hand configurations and touch-points by measuring the distance between the hand and the surface using capacitive sensing and a mesh-shaped antenna.
-The project’s ultimate aim was to turn surfaces seen every day, such as an ordinary table or a wall, into an immersive one using a nearby PC.
 
 In 2007 Microsoft introduced the Surface at the All Things D conference. Although many of its design concepts were not new, it very effectively illustrated the real-world use case for touchscreens embedded into something the size of a coffee table. Microsoft designed the Surface to be used by their commercial customers to give users a sample of the hardware. Firms such as AT\&T used the Surface to display the latest handsets to buyers visiting their brick and mortar retail locations.
 
-These technologies cannot be understated, as each had a monumental impact on the electronic devices we use today. Everything from PCs, laptops, smartphones, smartwatches, cameras can connect to the numerous innovations, discoveries, and patents in the history of touchscreen technology.
+These technologies cannot be understated, as each had a monumental impact on the electronic devices we use today. Everything from PCs, laptops, smartphones, smartwatches, and cameras can connect to the numerous innovations and discoveries in touchscreen technology history.
 \cite{ref8}
 
 \subsection{Voice Recognition Control}
-Compared to the other technologies mentioned earlier, Voice Control Recognition (VRC) seems relatively new. Like the touchscreen, VRC has been around since the middle of the 20th century. It is only in the past decade that it has taken its toll. Voice control is becoming more and more prominent. It has even inspired some films. The 2013 film 'Her' directed by Spike Jonze, starring Joaquin Phoenix and Scarlet Johansson, has an AI operating system that can learn and adapt. Pheonix plays Theodore, who is a writer, and Johansson plays the AI OS. They have deep, meaningful conversations in the film that show how advanced this AI OS is and possibly show where this technology's future is going. 
+Compared to the other technologies mentioned earlier, Voice Control Recognition (VRC) seems relatively new. Like the touchscreen, VRC has been around since the middle of the 20th century. It is only in the past decade that it has taken its toll. Voice control is becoming more and more prominent. It has even inspired some films. The 2013 film ‘Her’ directed by Spike Jonze, starring Joaquin Phoenix and Scarlet Johansson, has an AI operating system that can learn and adapt. Pheonix plays Theodore, who is a writer, and Johansson plays the AI OS. They have deep, meaningful conversations in the film that show how advanced this AI OS is and possibly show where this technology’s future is going. 
 \cite{ref9}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \caption{Her (2013) - Theodore and Samantha}
     \label{image:HER}
     \centering
-    \includegraphics[width=0.35\textwidth]{pics/Her.png}
+    \includegraphics[width=0.45\textwidth]{pics/Her.png}
 \end{figure}
 
 One of the first uses of VRC was In 1939 with the Voder. The Voder was developed to synthesize human speech by imitating the human vocal cords’ effects, controlled by selecting one of the machine’s two basic sounds with the pedal bar. The Audrey, which recognized a limited choice of spoken digits, was developed by Bell Labs in 1952. Audrey could distinguish between zero and nine. “Audrey could recognize the sound of a spoken digit – zero to nine – with more than 90\% accuracy.”. IBM created the Shoebox in the early 1960s. The Shoebox had the ability to understand up to 16 spoken words in English. The Shoebox was operated by speaking into a microphone, which then converted sounds into electrical impulses.
 
-In 1971, IBM created the Automatic Call Identification System, allowing engineers to talk to and accept spoken answers from a device, paving the first voice recognition steps. In 1976, The Harpy, developed by Carnegie Mellon of DARPA, was able to register 1,011 words. Similar to the other technologies mentioned earlier, VRC had a big boom in the 1980s. Hidden Markov Model was a new technique that allowed voice recognition machines to more accurately identify speech. Soon after this, IBM produced the Tangora, which was able to identify 20,000 spoken words. In the 1990s, workplaces began to use VRC with Dragon Dictate, operated by a Windows PC. Throughout the 1990s, VRC in the workplace continued to thrive. Apple launched Speakable Items in 1993. Speakable Items was a built-in controlled software for Apple's computers. 
+In 1971, IBM created the Automatic Call Identification System, allowing engineers to talk to and accept spoken answers from a device, paving the first voice recognition steps. In 1976, The Harpy, developed by Carnegie Mellon of DARPA, registered 1,011 words. Similar to the other technologies mentioned earlier, VRC had a big boom in the 1980s. Hidden Markov Model was a new technique that allowed voice recognition machines to more accurately identify speech. Soon after this, IBM produced the Tangora, which was able to identify 20,000 spoken words. 
 
-With the rise of AI and personal assistants in the 2000s, machine learning is enhancing VRC. In 2008, Google developed the Voice Search App for the iPhone, while Siri was introduced in 2011, giving their customers their own digital personal assistant. These enhancements marked a drastic change for mobile companies, as VRC enabled users to control their devices more efficiently than ever before. A few years after these devices, Microsoft introduced Cortana and Amazon created the Echo, a voice-controlled speaker powered by Alexa. With technologies like machine learning, VRC is only getting more advanced and heavily affects the future of electronic devices.
+With the rise of AI and personal assistants in the 2000s, machine learning is enhancing VRC. In 2008, Google developed the Voice Search App for the iPhone, while Siri was introduced in 2011, giving their customers their own digital personal assistant. These enhancements marked a drastic change for mobile companies, as VRC enabled users to control their devices more efficiently than ever before. A few years after these devices, Microsoft introduced Cortana and Amazon created the Echo. With technologies like machine learning, VRC is only getting more advanced and heavily affects the future of electronic devices.
 \cite{ref10}
 
 \begin{figure}[!ht]
     \caption{Voice Recognition Control}
     \label{image:VRC}
     \centering
-    \includegraphics[width=0.35\textwidth]{pics/vrc.jpg}
+    \includegraphics[width=0.4\textwidth]{pics/vrc.jpg}
 \end{figure}
 
 \subsection{Virtual and Augmented Spaces}
-Virtual and Augmented Reality has given people the power to enter different worlds by just putting on a VR or AR headset. VR is an entirely virtual world. AR being a profound technology is the betterment of the old and the new as it enables a new world by blending the physical world with the virtual. VR and AR were born when Charles Wheatstone invented the stereoscope in 1838. Wheatstone’s invention allowed the viewer to look at two similar images to create a 3D effect.
+Virtual and Augmented Reality has given people the power to enter different worlds by just putting on a VR or AR headset. VR is an entirely virtual world. AR being a profound technology is the betterment of the old and the new as it enables a whole new world by blending the physical world with the virtual. These technologies were born when Charles Wheatstone invented the stereoscope in 1838. Wheatstone’s invention allowed the viewer to look at two similar images to create a 3D effect.
 \cite{ref11}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \caption{Charles Wheatstone’s stereoscope}
     \label{image:stereoscope}
     \centering
-    \includegraphics[width=0.6\textwidth]{pics/stereoscope.jpg}
+    \includegraphics[width=0.5\textwidth]{pics/stereoscope.jpg}
 \end{figure}
 
-In 1938 William Gruber and Harold Graves introduced the View-Master.  View-Master was an alternative to the scenic postcard. Wheatstone’s stereoscope inspired the View-Master. It used 14 film transparencies in 7 pairs. As the stereoscope did, each pair of film transparencies simultaneously viewed, one for each eye, creating a 3D imaging. In 1961, Philco Corporation created the Headsight built on Morton Heilig's Sensorama, the first-ever head-mounted display. The Headsight was designed with the military in mind, allowing the remote viewing of possibly hazardous situations without putting people in danger.
+In 1960, Morton Heilig created the first-ever head-mounted display by inventing the Sensorama. This invention used stereoscopic technology and 3D imaging and widescreen vision, and stereo sound. In 1961, Philco Corporation created the Headsight built on Morton Heilig’s Sensorama. The Headsight was built mainly for the military. The Headsight allowed the remote viewing of possibly hazardous situations without putting people in danger.
 \cite{ref11}
 
-\begin{figure}[!ht]
+\begin{figure}[H]
     \caption{The Headsight}
     \label{image:Headsight}
     \centering
     \includegraphics[width=0.6\textwidth]{pics/Headsight.jpg}
 \end{figure}
 
-In the early 1990s, VR was used to create arcade games that introduced the concept to the public. These VR arcade games were followed by the launch of the first consumer VR device named the Sega VR. Sega VR was a home console that included stereo sound and head tracking. The Sega VR was unable to catch on due to an overwhelming number of headaches and motion sickness reports when operating it.
+VR was used in the early 1990s to build arcade games and revealed the technology to the public. The introduction of the first commercial VR system called the Sega VR followed these VR arcade games. The Sega VR was a home console that featured stereo sound and head tracking. Due to an excessive amount of headaches and motion sickness complaints, while using it, the Sega VR did not catch on.
 
 There are both VR and AR applications in almost every field that can help organizations develop new training methods, communication opportunities, interactive models, and more. Films and Games use AR and VR as they have never have done before. AR and VR create a far more immersive experience for their users, and as a result, they are growing to be very popular. 
 \cite{ref11}
 
 \subsection{Gesture Recognition}
-The invention of touchscreens described earlier has brought Gesture Recognition (GR) to a whole new level. GR’s origins were also discussed earlier, so modern uses of the technologies will be discussed here. GR has been quite prominent in video games. The Nintendo Wii brought GR to gaming’s center stage. The pairing of the Wii remote and the Wii sensor bar indicated the console could register a person’s movements and map them in a 3D computer-generated space. With the PlayStation, Sony soon followed the Wii by bringing out the Move and Eye technology similar to Nintendo’s GR work. Microsoft’s Xbox 360 Kinect camera took GR one step further. Its camera allows the Xbox 360 to recognize and track 20 individual joints of the human body as we groove along to Dance Central songs. 
+The invention of touchscreens described earlier has brought Gesture Recognition (GR) to a whole new level. GR’s origins were also discussed earlier, so modern uses of the technologies will be discussed here. GR has been quite prominent in video games. The Nintendo Wii brought GR to gaming’s center stage. The pairing of the Wii remote and the Wii sensor bar indicated the console could register a person’s movements and map them in a 3D computer-generated space. With the PlayStation, Sony soon followed the Wii by bringing out the Move and Eye technology similar to Nintendo’s GR work. Microsoft’s Xbox 360 Kinect camera took GR one step further. Its camera allows the Xbox 360 to recognize and track 20 individual joints of the human body. 
 \cite{ref12}
 
-GR has shown great potential in education. Hui-Mei Hsu (2011) presented a complete analysis on the use of Kinect in education and concluded that it should achieve the expected results, enhance classroom interaction and participation, and improve the way teachers can manipulate multimedia materials during the classes.
+In education, GR has shown tremendous promise. Hui-Mei Hsu (2011) provided a complete review of the usage of Kinect in education and concluded that it could produce the desired benefits, increase engagement and involvement in the classroom, and improve how teachers can control multimedia resources during classes.
 
-Myo is a drastic improvement from other motion control devices that use sensors to track gestures. Myo uses electromyography to interpret electrical signals from the wearer's forearm muscles, map them with movements made by the hand of the wearer, and monitor other instruments with certain gestures. For the Myo, it is not likely to be impaired by factors such as inadequate lighting conditions, space, and obstructions, unlike most GR devices using cameras. 
+The Myo is a drastic improvement from other motion control devices that use sensors to track gestures. Myo uses electromyography to interpret electrical signals from the wearer’s forearm muscles, map them with movements made by the wearer's hand, and monitor other instruments with certain gestures. For the Myo, it is not likely to be impaired by factors such as inadequate lighting conditions, space, and obstructions, unlike most GR devices using cameras. 
 \cite{ref13}
 
-GR technology will continue to evolve through enhancements and become even more widely used as they are becoming more accessible with these enhancements.
+GR technology will continue to evolve through enhancements and become even more widely used as they become more accessible with these enhancements.
 
 \begin{figure}[!ht]
     \caption{The Myo}
@@ -233,16 +228,16 @@ GR technology will continue to evolve through enhancements and become even more 
     \includegraphics[width=0.4\textwidth]{pics/myo.png}
 \end{figure}
 
-
+\newpage
 \section{Gestures as a Communication Tool}
 % How are gestures used in everyday life for communication with others? They
 % are a universal tool, albeit without a unilateral meaning and interpretation.
 % How are gestures defined and become accepted to represent various aspects of
 % communication?
 
-Gestures have become a part of everyday Communication. People do it naturally without thinking. Gestures go hand and hand with talking. They allow people to express themselves further. "Communication is the act of conveying meanings from one entity or group to another through the use of mutually understood signs, symbols, and semiotic rules. The main steps inherent to all Communication are: The formation of communicative motivation or reason." \cite{ref14}
-Gestures do have their advantages and disadvantages. One major disadvantage is language barriers. For example, a gesture could mean something in one language and then mean something entirely different in another. One gesture that can bring some confusion is the 'Okay' gesture. In most English-speaking countries, this means okay, whereas, in Japan, it means Money, and sometimes the gesture is made with the three fingers at the bottom. In Brazil, it is a rude gesture. In the Arab world, this sign's shaking represents the evil eye and is used as a curse or a threat, sometimes combined with verbal condemnation. The 'Come here' gesture, usually done by the index finger, is used quite a lot in English speaking countries. In the Philippines, it is only used for dogs as it is believed to be derogatory to use on people, and people could get arrested for using it. Just from these two gestures, it is shown that how different they can be when they look the same and can cause miscommunication.
-\cite{ref15}
+Gestures have become a part of everyday communication. People do it naturally without thinking. Gestures go hand and hand with talking. They allow people to express themselves further.
+Gestures do have their advantages and disadvantages. One major disadvantage is language barriers. For example, a gesture could mean something in one language and then mean something entirely different in another. One gesture that can bring some confusion is the ‘Okay’ gesture. In most English-speaking countries, this means okay, whereas, in Japan, it symbolizes money. In the Arab world, this sign’s shaking represents the evil eye and is used as a curse or a threat, sometimes combined with verbal condemnation. The ‘Come here’ gesture, usually done by the index finger, is used quite a lot in English speaking countries. In the Philippines, it is only used for dogs as it is believed to be derogatory to use on people, and people could get arrested for using it. Just from these two gestures, it is shown that how different they can be when they look the same and can cause miscommunication.
+\cite{ref14}
 
 \section{Challenges for the Design of Applications}
 % Incorporating gestures is an important part of the design phase. Using the
@@ -252,24 +247,27 @@ Gestures do have their advantages and disadvantages. One major disadvantage is l
 % resistance gradient of the user
 
 In Applications, Gestures are the new clicks. These gestures obtain a close personal connection with the content and improve the direct manipulation of on-screen objects. Designers have to be careful with applications as gestures can vary in what they mean and, unfortunately, limit the number of gestures in an application. However, this issue is not necessarily bad as the gesture will be more remember-able for users as there are only a few implemented. As users are accustomed to everyday gestures and do not like being challenged to learn many ways to do the same thing, this is a complex design environment. A pleasant aspect of the experience could be custom gestures in games and other immersive applications. It is easier to use familiar gestures in other apps because additional effort is not needed to discover or remember them.
-\cite{ref16}
+\cite{ref15}
 
 \section{Challenges for Implementation}
 % Deciding that a particular gesture should carry out a particular function is one
-% thing, actually tracking that gesture and deciding when it has been made is a
+% thing. Tracking that gesture and deciding when it has been made is a
 % different challenge. Looking at some systems and the gestures they use, what
 % are the challenges in implementation that had to be overcome for those systems?
 % How were those challenges met (if they were met)?
 
-Many smartphones rely on taps and swipes. They comes very naturally to most people. These taps can be more than one to perform different functions. "In general, having a single action available on swipe-right that starts or progresses the most important task is recommended, and - optionally - a single action is made available on left swipe."
-\cite{ref17}
-For the implementation of these navigation tools developers had to take take many things into account such as what does one tap, two taps, or a swipe do? The navigation bar that is usually on Android phones has three inter-grated buttons. The functions of these buttons can be customized. Their standard functionalities are to go back, to view the app menu, and to see already opened apps. IOS devices do the same thing but with a single button and swipes. The Android navigation bar can be hard to use initially, but there is more control from these three buttons than the IOS setup. These are two similar devices intended to do the same thing, and they both do them differently.
+Many smartphones rely on taps and swipes. They come very naturally to most people. These taps can be more than one to perform various functions. “In general, having a single action available on swipe-right that starts or progresses the most important task is recommended, and - optionally - a single action is made available on left swipe.”
+\cite{ref16}
+For implementing these navigation tools, developers had to take many things into account, such as what does one tap, two taps, or a swipe do? The navigation bar that is usually on Android phones has three inter-grated buttons. The functions of these buttons can be customized. Their standard functionalities are to go back, to view the app menu, and to see already opened apps. IOS devices do the same thing but with a single button and swipes. The Android navigation bar can be hard to use initially, but there is more control from these three buttons than the IOS setup. These are two similar devices intended to do the same thing, and they both do them differently.
 
 \section{Conclusion}
 % Conclusions are what you have learned from your research. This is your reflection on the current state of the art and the possible future directions of gesture-based user interfaces.
 
 Throughout this paper, User Experience Evolution, Gestures as a Communication Tool, Challenges for the Design of Gesture Applications, and the Challenges for Implementation of Gestures were all discussed. By doing this research paper, I learned that the user interface has a long and exciting history. It was enjoyable to learn where the devices that are around us today originated. Gesture Based technology is a fascinating area of the modern world, and doing this paper, has inspired me to always keep an eye out for these devices and be up to date and their current status.
 It is exciting to think about where these technologies might be in the future and how advanced they will be. Above everything else, I wholeheartedly believe machine learning will help these technologies become better with time and hard work from humans and machines. 
+\newline
+\newline
+“The times are coming when a machine will stand there and remain at rest. A human being will approach it, knowing that he must make one movement of the hand in this way, another in a definite relation to it, and a third again; and through the pulsations in the air which thus arise out of a certain sign, the motor, being attuned to this particular sign, will be set in motion.” - Rudolf Steiner \cite{ref17}
 
 %%% END OF CONTENT %%%%
 
@@ -328,21 +326,21 @@ URL: \url{https://blog.iinet.net.au/gesture-recognition/}
 \newline
 URL: \url{https://tinyurl.com/y68fdjw7}
 
-\bibitem{ref14} Wikipedia - Communication
-\newline
-URL: \url{https://g.co/kgs/2N6sjN}
-
-\bibitem{ref15} Bright Side - 15 Hand Gestures That Have Different Meanings Overseas
+\bibitem{ref14} Bright Side - 15 Hand Gestures That Have Different Meanings Overseas
 \newline
 URL: \url{https://tinyurl.com/yxl6kcw9}
 
-\bibitem{ref16} Apple Developer - Gestures
+\bibitem{ref15} Apple Developer - Gestures
 \newline
 URL: \url{https://tinyurl.com/y9zkjmpa}
 
-\bibitem{ref17} Microsoft Docs - Implementation Tips for Gestures
+\bibitem{ref16} Microsoft Docs - Implementation Tips for Gestures
 \newline
 URL: \url{https://tinyurl.com/y2p5trby}
+
+\bibitem{ref17} Rudolf Steiner - The Insertion of Early Human Destiny into Extraterrestial Relationships
+\newline
+URL: \url{https://wn.rsarchive.org/Lectures/GA172/English/ZS3295/ZS3295_index.html} 
 
 \end{thebibliography}
 
